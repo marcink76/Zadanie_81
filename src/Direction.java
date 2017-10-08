@@ -3,7 +3,7 @@ public enum Direction {
     SOUTH("Południe", 1),
     WEST("Zachód", 2),
     EAST("Wschód", 3),
-    UNDEFINED("Niezdefiniowany", 5);
+    UNDEFINED("Niezdefiniowany", 4);
 
     private final String description;
     private final int number;
@@ -35,7 +35,7 @@ public enum Direction {
         if (number == WEST.getNumber()) {
             System.out.println(WEST.getDescription());
         }
-        if (number < 0 || number > 4) {
+        if (number < 0 || number > 3) {
             System.out.println(Direction.UNDEFINED.getDescription());
         }
     }
